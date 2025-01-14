@@ -8,7 +8,7 @@ const screenTwo: FC<Props> = ({ children }) => {
   return (
     <View style={{ paddingTop: 20 }}>
       <Text>screenTwo inside drawer navigator</Text>
-      <ButtonClicker />
+      <ButtonClicker text="onPress events are fired normal" />
     </View>
   );
 };

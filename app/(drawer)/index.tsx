@@ -9,13 +9,12 @@ const index: FC<Props> = ({ children }) => {
   return (
     <View style={{ paddingTop: 20 }}>
       <Text>Screen inside drawer navigator</Text>
-
       <View style={{ paddingTop: 20 }}>
         <Link href="/(main)/otherscreen" asChild>
           <Button title="Screen outside drawer" />
         </Link>
       </View>
-      <ButtonClicker />
+      <ButtonClicker text="onPress events are fired normal" />
     </View>
   );
 };

@@ -8,7 +8,8 @@ const otherscreen: FC<Props> = ({ children }) => {
   return (
     <View style={{ paddingTop: 20 }}>
       <Text>Other screen</Text>
-      <ButtonClicker />
+
+      <ButtonClicker text="onPress events are sometimes fired or not" />
     </View>
   );
 };
