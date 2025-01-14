@@ -7,7 +7,7 @@ type Props = { children?: React.ReactNode };
 const screenTwo: FC<Props> = ({ children }) => {
   return (
     <View style={{ paddingTop: 20 }}>
-      <Text>screenTwo</Text>
+      <Text>screenTwo inside drawer navigator</Text>
       <ButtonClicker />
     </View>
   );
