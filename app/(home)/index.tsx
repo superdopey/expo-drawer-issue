@@ -1,23 +1,21 @@
-import React, { FC } from "react";
-import { Link } from "expo-router";
 import ButtonClicker from "@/components/ButtonClicker";
-import { View, Text, Button } from "react-native";
-import PressClicker from "@/components/PressClicker";
+import { Link } from "expo-router";
+import React, { FC } from "react";
+import { Button, Text, View } from "react-native";
 
 type Props = { children?: React.ReactNode };
 
 const index: FC<Props> = ({ children }) => {
   return (
     <View style={{ paddingTop: 20 }}>
-      <Text>Home</Text>
+      <Text>Screen with drawer</Text>
 
       <View style={{ paddingTop: 20 }}>
-        <Link href="/(home)/two" asChild>
-          <Button title="two" />
+        <Link href="/(main)/otherscreen" asChild>
+          <Button title="Other screen" />
         </Link>
       </View>
       <ButtonClicker />
-      <PressClicker />
     </View>
   );
 };
